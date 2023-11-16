@@ -1,0 +1,97 @@
+function checkCurrency(name) {
+				var selectedValue = $("select[name='" + name + "']").val();
+				if (selectedValue === "USD") {
+					$("body").on("keyup", ".price, .qty, .RoE", function () {
+    				var price = Number($(this).closest("tr").find(".price").val());
+					var qty = Number($(this).closest("tr").find(".qty").val());
+					var Roe = Number($(this).closest("tr").find(".RoE").val());
+					$(this).closest("tr").find(".total").val(price * qty * Roe);
+					total_qty();
+					grand_total();
+					function grand_total(){
+						var tot=0;
+						$(".total").each(function(){
+							tot+=Number($(this).val());
+						});
+						$("#grand_total").val(tot);
+					}
+
+					function total_qty(){
+						var totq=0;
+						$(".qty").each(function(){
+							totq+=Number($(this).val());
+						});
+						$("#total_qty").val(totq);
+					}
+				});
+				} else if (selectedValue === "Pkr") {
+					$("body").on("keyup", ".price, .qty", function () {
+    				var price = Number($(this).closest("tr").find(".price").val());
+					var qty = Number($(this).closest("tr").find(".qty").val());
+					$(this).closest("tr").find(".total").val(price * qty);
+					total_qty();
+					grand_total();
+					function grand_total(){
+						var tot=0;
+						$(".total").each(function(){
+							tot+=Number($(this).val());
+						});
+						$("#grand_total").val(tot);
+					}
+
+					function total_qty(){
+						var totq=0;
+						$(".qty").each(function(){
+							totq+=Number($(this).val());
+						});
+						$("#total_qty").val(totq);
+					}
+				});
+				}};
+
+
+
+
+                function checkCurrency(name) {
+					var selectedValue = $("select[name='" + name + "']").val();
+					attachEventListeners(selectedValue);
+				}
+				
+				function attachEventListeners(selectedValue) {
+    				if (selectedValue === "USD") {
+        				$("body").on("keyup", ".price, .qty, .RoE", function () {
+						var price = Number($(this).closest("tr").find(".price").val());
+						var qty = Number($(this).closest("tr").find(".qty").val());
+						var Roe = Number($(this).closest("tr").find(".RoE").val());
+						$(this).closest("tr").find(".total").val(price * qty * Roe);
+						total_qty();
+						grand_total();
+					});
+					} else if (selectedValue === "Pkr") {
+						$("body").on("keyup", ".price, .qty", function () {
+							var price = Number($(this).closest("tr").find(".price").val());
+							var qty = Number($(this).closest("tr").find(".qty").val());
+							$(this).closest("tr").find(".total").val(price * qty);
+							total_qty();
+							grand_total();
+						});
+					}
+
+					function grand_total() {
+						var tot = 0;
+						$(".total").each(function () {
+							tot += Number($(this).val());
+						});
+						$("#grand_total").val(tot);
+					}
+
+					function total_qty() {
+						var totq = 0;
+						$(".qty").each(function () {
+							totq += Number($(this).val());
+						});
+						$("#total_qty").val(totq);
+					}
+				}
+				// Example usage:
+				checkCurrency("currency");

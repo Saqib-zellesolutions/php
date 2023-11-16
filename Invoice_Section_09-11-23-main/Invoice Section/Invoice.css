@@ -1,0 +1,204 @@
+
+.mainCenter{
+    /* background-color: red; */
+    padding: auto;
+  }
+
+  .height1{
+    height: 100px;
+  }
+
+  .heading1 h1{
+    font-size: 32px;
+    font-weight: bolder;
+    color: black;
+    text-align: end;
+  }
+
+
+  .leftSideData{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .leftSideData h3{
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+    text-align: start;
+  }
+
+  .leftSideData p{
+    font-size: 14px;
+    font-weight: 500;
+    color: black;
+    text-align: start;
+    margin: 0px;
+  }
+
+  .divider1{
+    height: 1px;
+    width: 40%;
+    background-color: black;
+    text-align: start;
+    margin-bottom: 5px;
+  }
+  .leftSideDataA p{
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
+    text-align: start;
+    margin: 1px;
+  }
+  .leftSideDataB p{
+    font-size: 14px;
+    font-weight: 400;
+    color: black;
+    text-align: end;
+    margin: 1px;
+
+  }
+
+  .mainTableH1{
+    padding-left: auto;
+    padding-right: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    background-color: rgb(208, 52, 208);
+    color: #fff;
+    font-weight: bold;
+    border-right: 4px solid white;
+  }
+
+  .mainTableH2{
+    padding-left: auto;
+    padding-right: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    background-color: rgb(208, 52, 208);
+    color: #fff;
+    font-weight: bold;
+    border-right: 4px solid white;
+  }
+
+  .mainTableH3{
+    padding-left: auto;
+    padding-right: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    background-color: rgb(208, 52, 208);
+    color: #fff;
+    font-weight: bold;
+  }
+
+
+
+  .mainTableR1{
+    padding-left: auto;
+    padding-right: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: start;
+    background-color: #4A9BC6;
+    color: #fff;
+    font-weight: 400;
+    border-right: 4px solid white;
+    margin-bottom: 30px;
+  }
+
+  .mainTableR2{
+    padding-left: auto;
+    padding-right: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: start;
+    background-color: #4A9BC6;
+    color: #fff;
+    font-weight: 400;
+    border-right: 4px solid white;
+    margin-bottom: 30px;
+  }
+
+  .mainTableR3{
+    padding-left: auto;
+    padding-right: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: start;
+    background-color: #4A9BC6;
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }
+
+  .totalAmountH{
+    border: 3px solid black;
+    color: #333F4F;
+    font-weight: 600;
+    font-size: 22px;
+    padding: 5px;
+    text-align: center;
+  }
+
+  .totalAmountFig{
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    border-right: 3px solid black;
+    color: black;
+    font-weight: 600;
+    font-size: 22px;
+    padding: 5px;
+    text-align: end;
+  }
+
+
+  .totalAmountIn{
+    border: 3px solid black;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 5px;
+    text-align: start;
+  }
+
+
+  .greeting1{
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+  }
+
+
+  .divider2{
+    height: 1px;
+    width: 40%;
+    background-color: black;
+    text-align: start;
+  }
+
+  .bottomLeftData h3{
+    font-weight: bold;
+    font-size: 14px;
+    text-align: start;
+    margin: 1px;
+  }
+
+  .bottomLeftData p{
+    font-weight: 500;
+    font-size: 14px;
+    text-align: start;
+    margin: 1px;
+  }
+
+  .bottomLeftData h2{
+    font-weight: bold;
+    font-size: 14px;
+    text-align: start;
+    margin: 1px;
+  }
+
+  /* .row1{
+    display: flex;
+  } */
